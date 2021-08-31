@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GraduatedSlider
 
 class ViewController: UIViewController {
     @IBOutlet weak var verticalSlider: GraduatedSlider!
