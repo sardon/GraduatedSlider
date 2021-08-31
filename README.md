@@ -60,6 +60,7 @@ dependencies: [
 ## Meta
 
 [Camera1](https://camera1.app)
+
 [https://github.com/sardon/GraduatedSlider](https://github.com/sardon/GraduatedSlider)
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
