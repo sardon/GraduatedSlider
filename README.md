@@ -1,6 +1,6 @@
 # GraduatedSlider
 
-A UISlider-like control with graduations (e.g. like a DJ desk slider), can be used vertically or horizontally, optional haptic feedback
+A UISlider-like control with graduations (e.g. like sliders on DJ decks), can be used vertically or horizontally, optional haptic feedback
 
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
@@ -36,8 +36,7 @@ slider.addTarget(self, action: #selector(onSliderTouchEnded(_:)), for: . touchUp
 ### Vertical / horizontal orientation
 
 ```swift
-slider.orientation = .horizontal // default is .vertical
-slider.isVertical = false // same effect, but accessible from Interface Builder
+slider.isHoritontal = true // default false
 ```
 
 
@@ -59,9 +58,11 @@ dependencies: [
 
 ## Meta
 
-[Camera1](https://camera1.app)
+[Camera1](https://www.camera1.app/)
+
 
 [https://github.com/sardon/GraduatedSlider](https://github.com/sardon/GraduatedSlider)
+
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
