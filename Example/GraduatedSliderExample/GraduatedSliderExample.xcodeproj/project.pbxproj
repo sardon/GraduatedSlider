@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		969B8AA826DDE8BB00CCEC2A /* GraduatedSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 969B8AA726DDE8BB00CCEC2A /* GraduatedSlider */; };
 		96F576D826DCE0A5002C04F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F576D726DCE0A5002C04F4 /* AppDelegate.swift */; };
 		96F576DA26DCE0A5002C04F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F576D926DCE0A5002C04F4 /* SceneDelegate.swift */; };
 		96F576DC26DCE0A5002C04F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F576DB26DCE0A5002C04F4 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969B8AA826DDE8BB00CCEC2A /* GraduatedSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = GraduatedSliderExample;
+			packageProductDependencies = (
+				969B8AA726DDE8BB00CCEC2A /* GraduatedSlider */,
+			);
 			productName = GraduatedSliderExample;
 			productReference = 96F576D426DCE0A5002C04F4 /* GraduatedSliderExample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 96F576CB26DCE0A5002C04F4;
+			packageReferences = (
+				969B8AA626DDE8BB00CCEC2A /* XCRemoteSwiftPackageReference "GraduatedSlider" */,
+			);
 			productRefGroup = 96F576D526DCE0A5002C04F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		969B8AA626DDE8BB00CCEC2A /* XCRemoteSwiftPackageReference "GraduatedSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sardon/GraduatedSlider";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		969B8AA726DDE8BB00CCEC2A /* GraduatedSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 969B8AA626DDE8BB00CCEC2A /* XCRemoteSwiftPackageReference "GraduatedSlider" */;
+			productName = GraduatedSlider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96F576CC26DCE0A5002C04F4 /* Project object */;
 }

@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4m-LF-g8N" customClass="GraduatedSlider" customModule="GraduatedSliderExample">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4m-LF-g8N" customClass="GraduatedSlider" customModule="GraduatedSlider">
                                 <rect key="frame" x="182" y="93" width="50" height="448"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -37,7 +37,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHapticFeedbackEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECq-vz-Ywh" customClass="GraduatedSlider" customModule="GraduatedSliderExample">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECq-vz-Ywh" customClass="GraduatedSlider" customModule="GraduatedSlider">
                                 <rect key="frame" x="62" y="695" width="290" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
