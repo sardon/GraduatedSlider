@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class GraduatedSlider: UIControl {
+open class GraduatedSlider: UIControl {
 
     /// Set to true if the slider is horizontal
-    @IBInspectable var isHorizontal: Bool = false {
+    @IBInspectable open var isHorizontal: Bool = false {
         didSet {
             backgroundLayer.isHorizontal = isHorizontal
             cursorLayer.isHorizontal = isHorizontal
@@ -22,28 +22,28 @@ class GraduatedSlider: UIControl {
     }
 
     /// The slider's graduations color
-    @IBInspectable var graduationColor: UIColor = UIColor(white: 1.0, alpha: 0.7) {
+    @IBInspectable open var graduationColor: UIColor = UIColor(white: 1.0, alpha: 0.7) {
         didSet {
             backgroundLayer.graduationsColor = graduationColor.cgColor
         }
     }
 
     /// The slider's cursor color
-    @IBInspectable var cursorColor: UIColor = UIColor(white: 0.85, alpha: 0.7) {
+    @IBInspectable open var cursorColor: UIColor = UIColor(white: 0.85, alpha: 0.7) {
         didSet {
             cursorLayer.cursorColor = cursorColor.cgColor
         }
     }
 
     /// The slider's cursor outline color
-    @IBInspectable var cursorOutlineColor: UIColor = UIColor(white: 0.7, alpha: 0.64) {
+    @IBInspectable open var cursorOutlineColor: UIColor = UIColor(white: 0.7, alpha: 0.64) {
         didSet {
             cursorLayer.cursorOutlineColor = cursorOutlineColor.cgColor
         }
     }
 
     /// The slider's cursor color, when higlighted (currently tracking)
-    @IBInspectable var cursorHighlightedColor: UIColor = UIColor(white: 0.7, alpha: 0.64) {
+    @IBInspectable open var cursorHighlightedColor: UIColor = UIColor(white: 0.7, alpha: 0.64) {
         didSet {
             cursorLayer.cursorHighlightedColor = cursorOutlineColor.cgColor
         }
@@ -73,13 +73,13 @@ class GraduatedSlider: UIControl {
         }
     }
 
-    override var frame: CGRect {
+    open override var frame: CGRect {
         didSet {
             updateLayerFrames()
         }
     }
 
-    override var bounds: CGRect {
+    open override var bounds: CGRect {
         didSet {
             updateLayerFrames()
         }
@@ -90,7 +90,7 @@ class GraduatedSlider: UIControl {
     private var previousLocation = CGPoint()
     private var feedbackGenerator: UISelectionFeedbackGenerator?
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
         updateLayerFrames()
@@ -160,7 +160,7 @@ class GraduatedSlider: UIControl {
 
     // MARK: UIControl
 
-    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    open override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         previousLocation = touch.location(in: self)
 
         if cursorLayer.frame.contains(previousLocation) {
@@ -177,7 +177,7 @@ class GraduatedSlider: UIControl {
         return cursorLayer.highlighted
     }
 
-    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    open override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let location = touch.location(in: self)
         let delta: CGFloat
 
@@ -207,11 +207,11 @@ class GraduatedSlider: UIControl {
         return true
     }
 
-    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+    open override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         cursorLayer.highlighted = false
     }
 
-    override func cancelTracking(with event: UIEvent?) {
+    open override func cancelTracking(with event: UIEvent?) {
         cursorLayer.highlighted = false
     }
 
