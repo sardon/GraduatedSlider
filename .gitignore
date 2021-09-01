@@ -4,4 +4,6 @@
 /*.xcodeproj
 xcuserdata/
 DerivedData/
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+*/swiftpm/
+.swiftpm/
+Example/GraduatedSliderExample/GraduatedSliderExample.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
